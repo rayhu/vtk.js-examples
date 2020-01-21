@@ -6,16 +6,17 @@
   "scripts": {
     "build": "webpack-dev-server --mode=production --progress",
     "dev": "webpack-dev-server --mode=development",
-    "dev:cone": "EXAMPLE=cone.js webpack-dev-server --mode=development",
-    "dev:cone-filter": "EXAMPLE=cone-filter.js webpack-dev-server --mode=development",
-    "dev:volume": "EXAMPLE=volume.js webpack-dev-server --mode=development",
-    "dev:volume-transfer": "EXAMPLE=volume-transfer.js webpack-dev-server --mode=development",
-    "dev:image-slicing": "EXAMPLE=image-slicing.js webpack-dev-server --mode=development",
-    "dev:widgets": "EXAMPLE=widgets.js webpack-dev-server --mode=development"
+    "dev:cone": "cross-env EXAMPLE=cone.js webpack-dev-server --mode=development",
+    "dev:cone-filter": "cross-env EXAMPLE=cone-filter.js webpack-dev-server --mode=development",
+    "dev:volume": "cross-env EXAMPLE=volume.js webpack-dev-server --mode=development",
+    "dev:volume-transfer": "cross-env EXAMPLE=volume-transfer.js webpack-dev-server --mode=development",
+    "dev:image-slicing": "cross-env EXAMPLE=image-slicing.js webpack-dev-server --mode=development",
+    "dev:widgets": "cross-env EXAMPLE=widgets.js webpack-dev-server --mode=development"
   },
   "author": "",
   "license": "BSD-3-Clause",
   "dependencies": {
+    "cross-env": "^6.0.3",
     "vtk.js": "^11.1.3"
   },
   "devDependencies": {
